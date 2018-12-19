@@ -8,25 +8,25 @@ class Rating extends Component {
       rating: this.props.rating
     };
   }
-  
+
   render() {
     return(
       <div>
-        <h1>Rating: {this.props.rating}</h1>
+        <h1>Rating: {this.state.rating}</h1>
         <Glyphicon
-          glyph={this.props.rating >= 1 ? "star" : "star-empty"}
+          glyph={this.state.rating >= 1 ? "star" : "star-empty"}
         />
         <Glyphicon
-          glyph={this.props.rating >= 2 ? "star" : "star-empty"}
+          glyph={this.state.rating >= 2 ? "star" : "star-empty"}
         />
         <Glyphicon
-          glyph={this.props.rating >= 3 ? "star" : "star-empty"}
+          glyph={this.state.rating >= 3 ? "star" : "star-empty"}
         />
         <Glyphicon
-          glyph={this.props.rating >= 4 ? "star" : "star-empty"}
+          glyph={this.state.rating >= 4 ? "star" : "star-empty"}
         />
         <Glyphicon
-          glyph={this.props.rating >= 5 ? "star" : "star-empty"}
+          glyph={this.state.rating >= 5 ? "star" : "star-empty"}
         />
       </div>
     );
