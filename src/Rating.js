@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Glyphicon } from 'react-bootstrap';
 
 class Rating extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rating: this.props.rating
+    };
+  }
+  
   render() {
     return(
       <div>
