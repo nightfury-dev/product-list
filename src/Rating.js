@@ -9,6 +9,12 @@ class Rating extends Component {
     };
   }
 
+  handleClick(ratingValue) {
+    this.setState({
+      rating: ratingValue
+    });
+  }
+
   render() {
     return(
       <div>
