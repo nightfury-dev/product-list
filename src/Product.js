@@ -28,7 +28,7 @@ class Product extends Component {
             </p>
           </Media.Body>
         </Media>
-      </div>;
+      </div>
     );
   }
 }
