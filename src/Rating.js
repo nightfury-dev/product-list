@@ -40,6 +40,7 @@ class Rating extends Component {
             glyph={this.state.rating >= 5 ? "star" : "star-empty"}
             onClick={this.handleClick.bind(this, 5)}
           />
+          {this.props.numOfReviews}
         </div>
       </div>
     );
