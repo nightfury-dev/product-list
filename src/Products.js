@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Product from './Product';
 
 class Products extends Component {
   constructor(props) {
@@ -35,10 +36,11 @@ class Products extends Component {
   }
 
   render () {
-
-    const products = ["Learning React", "Pro React", "Beginning React"];
-    const listProducts = products.map((product) =>
-      <li key={product.toString()}>{product}</li>
+    const listProducts = this.products.map((product) =>
+      <Product
+        key={product.productName}
+        data={product}
+      />
     );
 
     return (
