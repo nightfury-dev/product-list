@@ -18,7 +18,6 @@ class Rating extends Component {
   render() {
     return(
       <div>
-        <h1>Rating: {this.state.rating}</h1>
         <div style={styles.starStyle}>
           <Glyphicon
           glyph={this.state.rating >= 1 ? "star" : "star-empty"}
@@ -40,7 +39,7 @@ class Rating extends Component {
             glyph={this.state.rating >= 5 ? "star" : "star-empty"}
             onClick={this.handleClick.bind(this, 5)}
           />
-          {this.props.numOfReviews}
+        ({this.props.numOfReviews})
         </div>
       </div>
     );
