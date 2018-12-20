@@ -10,13 +10,8 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Another React Tutorial!</h1>
+        <h1>React Product List</h1>
         <Products />
-        <Rating rating="1" />
-        <Rating rating="2" />
-        <Rating rating="3" />
-        <Rating rating="4" />
-        <Rating rating="5" />
         <Button bsStyle="primary" disabled={!isValid}>Default</Button>
       </div>
     );
